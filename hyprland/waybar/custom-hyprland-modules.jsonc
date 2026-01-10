@@ -1,0 +1,48 @@
+{
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 40,
+    "separate-outputs": false,
+    "rewrite": {
+      "^.*( — LibreWolf|LibreWolf)$": "󰈹  LibreWolf",
+      "(.*) — Mozilla Firefox": "  Firefox",
+      "(.*) - Google Chrome": "  Chrome",
+      ".*(NVIM|Neovim|nvim)$": "  Neovim",
+      "^.*~$": "󰄛  Kitty",
+      "^$": "  Empty",
+      "^.*pdf( .*|$)": "  ",
+      "^.*(- Mousepad)$": "  $1"
+    }
+  },
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{name}: {windows}",
+    "format-window-separator": " ",
+    "window-rewrite-default": " ",
+    "window-rewrite": {
+      "title<.*youtube.*>": " ",
+      "class<firefox>": " ",
+      "title<.*Chrome.*>": " ",
+      "kitty": "  ",
+      "nvim": " ",
+      "foot": " ",
+      "code": "󰨞 "
+    },
+    "format-icons": {
+      "urgent": "",
+      "focused": "",
+      "default": " "
+    }
+  },
+  "hyprland/language": {
+    // "format": "⌨ {long}",
+    "format": "{}",
+    "format-en": "US",
+    "format-th": "TH",
+    "on-click": "hyprctl switchxkblayout current next",
+    "keyboard-name": "hid-0430:0005"
+  }
+}

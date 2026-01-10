@@ -1,0 +1,33 @@
+[window]
+opacity = 0.80
+dynamic_padding = true
+padding = { x = 10, y = 10 }
+decorations = "Full"
+startup_mode = "Windowed"
+# title = "Alacritty"
+dynamic_title = true
+
+[cursor]
+style = { shape = "beam", blinking = "On" }
+# blink_interval = 750
+# unfocused_hollow = true
+# # Cursor สีส้ม
+[colors.cursor]
+# text = "#000000"
+cursor = "#ffb86c"
+
+[colors.vi_mode_cursor]
+text = "#000000"
+cursor = "#ffff00"
+
+[selection]
+save_to_clipboard = true
+
+[font]
+normal.family = "Hack Nerd Font"
+size = 13
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/github_dark.toml"
+]
