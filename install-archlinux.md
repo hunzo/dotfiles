@@ -39,12 +39,6 @@ archinstall
 ## Manual edit mkinitcpio.conf
 
 - enable gpu nvidia edit file /etc/mkinitcpio.conf
-- delete
-
-```
-"o
-```
-
 - run
 
 ```bash
