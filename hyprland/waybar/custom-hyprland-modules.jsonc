@@ -43,6 +43,6 @@
     "format-en": "US",
     "format-th": "TH",
     "on-click": "hyprctl switchxkblayout current next",
-    "keyboard-name": "semico---usb-gaming-keyboard-"
+    "keyboard-name": "hid-0430:0005"
   }
 }

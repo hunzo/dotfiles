@@ -1,4 +1,4 @@
-#Config Hyprland
+# Config Hyprland
 
 # Install yay
 
