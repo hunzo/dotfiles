@@ -43,7 +43,6 @@ archinstall
 
 ```bash
 sudo mkinitcpio -P
-
 ```
 
 - boot loader using grub
@@ -56,6 +55,11 @@ $ grub-install /dev/nvme0n1
 $ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## remove os-prober
+## enable os-prober
 
 - edit /etc/default/grub
+- un-comment
+
+```
+GRUB_DISABLE_OS_PROBER=false
+```
