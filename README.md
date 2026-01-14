@@ -143,3 +143,9 @@ pactl set-default-sink bluez_output.XX_XX_XX_XX_XX_XX.a2dp-sink
 ```bash
 hyprctl devices
 ```
+
+# Neovim
+```bash
+mkdir -p ~/.config/nvim
+stow nvim -t ~/.config/nvim
+```

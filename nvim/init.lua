@@ -1,0 +1,5 @@
+require("core.global")
+require("core.keymap")
+require("core.option")
+require("core.lazy")
+require("utils.lsp")
