@@ -35,15 +35,9 @@
       "network"
     ]
   },
-  // Network
-  //   "format-ethernet": "🖧 ↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}",
-  //   "format-disconnected": "  Disconnected",
-  //   "tooltip-format": "{ipaddr}\n↓ {bandwidthDownBits}\n↑ {bandwidthUpBits}"
-  // },
   "network": {
     "format": "{ifname}",
     "format-wifi": "    {signalStrength}%     {bandwidthDownBytes}     {bandwidthUpBytes}",
-    // "format-wifi": "   {signalStrength}%",
     "format-ethernet": "⇄ {ipaddr}     {bandwidthDownBits}     {bandwidthUpBits}",
     "format-disconnected": "Not connected", //An empty format will hide the module.
     "tooltip-format": "🖧 {ifname} via {gwaddri}",
@@ -51,11 +45,9 @@
     "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    // "on-click": "kitty --hold nmtui"
     "on-click": "networkmanager_dmenu "
   },
   "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
     "format": "{icon}  {volume}%",
     "format-bluetooth": "{volume}%  {icon} {format_source}",
     "format-bluetooth-muted": "bluetooth-muted  {icon} {format_source}",
