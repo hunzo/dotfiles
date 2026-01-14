@@ -19,15 +19,15 @@
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{name}   {windows}",
+    "format": "{name}: {windows}",
     "format-window-separator": " ",
     "window-rewrite-default": " ",
     "window-rewrite": {
-      "title<.*youtube.*>": " ",
+      "title<.*YouTube.*>": " ",
       "class<firefox>": " ",
       "title<.*Chrome.*>": " ",
+      "title<.*nvim.*>": " ",
       "kitty": "  ",
-      "nvim": " ",
       "foot": " ",
       "code": "󰨞 "
     },
