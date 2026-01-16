@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "top",
-  // "spacing": 15,
+  // "spacing": 20,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
@@ -10,32 +10,28 @@
     "~/.config/waybar/custom-hyprland-modules.jsonc",
     "~/.config/waybar/custom-modules.jsonc"
   ],
-  // "modules-left": [
-  //   "cpu",
-  //   "memory",
-  //   // "disk",
-  //   // "group/hardware",
-  //   "custom/sep",
-  //   "hyprland/workspaces"
-  // ],
-  "modules-center": [
-    "hyprland/workspaces",
+  "modules-left": [
+    "cpu",
+    "memory",
+    // "disk",
+    // "group/hardware",
     "custom/sep",
-    "hyprland/language",
-    "clock#simpleclock",
-    "pulseaudio"
+    "hyprland/workspaces"
   ],
-  // "modules-right": [
-  //   "pulseaudio",
-  //   "bluetooth",
-  //   "battery",
-  //   "custom/sep",
-  //   // "clock",
-  //   "clock#simpleclock",
-  //   "hyprland/language",
-  //   "tray",
-  //   "custom/notification"
-  // ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "bluetooth",
+    "battery",
+    "custom/sep",
+    // "clock",
+    "clock#simpleclock",
+    "hyprland/language",
+    "tray",
+    "custom/notification"
+  ],
   "mpris": {
     "player": "spotify",
     "dynamic-order": [
@@ -61,7 +57,7 @@
   },
   "custom/notification": {
     "tooltip": true,
-    "format": "<span size='14pt'>{icon}</span>",
+    "format": "<span size='16pt'>{icon}</span>",
     "format-icons": {
       "notification": "󱅫 ",
       "none": "󰂜",
