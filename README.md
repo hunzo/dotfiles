@@ -138,6 +138,20 @@ pactl get-default-sink
 pactl set-default-sink bluez_output.XX_XX_XX_XX_XX_XX.a2dp-sink
 ```
 
+- example
+
+```bash
+pactl get-default-sink
+alsa_output.pci-0000_00_1f.3.analog-stereo
+
+pactl list short sinks
+58	alsa_output.pci-0000_00_1f.3.analog-stereo	PipeWire	s32le 2ch 48000Hz	IDLE
+311	alsa_output.pci-0000_01_00.1.hdmi-stereo	PipeWire	s32le 2ch 48000Hz	SUSPENDED
+325	bluez_output.58:FC:C6:DB:87:72	PipeWire	float32le 2ch 48000Hz	RUNNING
+
+pactl set-default-sink bluez_output.58:FC:C6:DB:87:72
+```
+
 # Keyboard
 
 ```bash
