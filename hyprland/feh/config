@@ -1,5 +1,5 @@
-fullscreen true
-auto_zoom true
-hide-pointer true
-image-bg black
-borderless true
+# fullscreen true
+# auto_zoom true
+# hide-pointer true
+# image-bg black
+# borderless true
