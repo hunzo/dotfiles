@@ -152,6 +152,27 @@ pactl list short sinks
 pactl set-default-sink bluez_output.58:FC:C6:DB:87:72
 ```
 
+- auto config
+
+```bash
+#!/usr/bin/env bash
+
+# หา Bluetooth sink ตัวแรกที่เจอ
+BT_SINK=$(pactl list short sinks | awk '/^.*bluez_output\./ {print $2; exit}')
+
+if [ -n "$BT_SINK" ]; then
+    echo "Setting default sink to Bluetooth: $BT_SINK"
+    pactl set-default-sink "$BT_SINK"
+
+    # ย้าย stream ที่กำลังเล่นอยู่ทั้งหมดไปที่ Bluetooth
+    pactl list short sink-inputs | awk '{print $1}' | while read -r INPUT; do
+        pactl move-sink-input "$INPUT" "$BT_SINK"
+    done
+else
+    echo "Bluetooth sink not found. Skipping."
+fi
+```
+
 # Keyboard
 
 ```bash
