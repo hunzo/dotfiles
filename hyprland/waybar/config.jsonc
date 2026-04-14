@@ -14,6 +14,7 @@
   "modules-center": [
     "hyprland/workspaces",
     "custom/sep",
+    "battery",
     "hyprland/language",
     "clock#simpleclock",
     "pulseaudio",
