@@ -19,6 +19,7 @@ window#waybar {
   padding-left: 10px;
   margin: 4px;
 }
+
 .modules-right {
   padding-right: 10px;
 }
@@ -35,9 +36,9 @@ window#waybar {
 #workspaces button {
   /*
   margin: 5px 10px 5px 10px;
-  padding: 0px 5px 0 5px; 
+  padding: 0px 5px 0 5px;
   border-radius: 20px;
-  border: none; 
+  border: none;
   background: transparent;  */
   margin: 4px;
   padding: 0px 10 0px 10px;
@@ -55,6 +56,7 @@ window#waybar {
   box-shadow: none;
   text-shadow: none;
 }
+
 /*
 #workspaces button.active {
   background: rgba(137, 180, 250, 0.9);
@@ -71,7 +73,7 @@ window#waybar {
   text-shadow: none;
 }
 
-/* 
+/*
 #workspaces button.empty {
   background: red;
 } */
@@ -94,6 +96,7 @@ window#waybar {
 #memory,
 #network,
 #network2,
+#simplenetwork,
 #backlight,
 #battery,
 #window,
