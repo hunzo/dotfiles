@@ -17,7 +17,7 @@ stow hyprland -t ~/.config
 - delete
 
 ```bash
-stow -D . -t ~/.config
+stow -D hyprland -t ~/.config
 ```
 
 ## add .bashrc
@@ -41,8 +41,6 @@ export PS1='[\[\e[0;32m\]\u@\h\[\e[0m\]]:\[\e[1;34m\]\w\[\e[0m\] \$ '
 alias tmux='tmux -u'
 alias vim=nvim
 set -o vi
-
-setxkbmap -layout us,th -option grp:win_space_toggle
 ```
 
 ## bluetooth
